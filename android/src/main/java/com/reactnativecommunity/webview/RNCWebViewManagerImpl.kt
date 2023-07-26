@@ -618,7 +618,8 @@ class RNCWebViewManagerImpl {
         val view = viewWrapper.webView
     }
     
-    fun setHasOnOpenWindowEvent(view: RNCWebView, value: Boolean) {
+    fun setHasOnOpenWindowEvent(viewWrapper: RNCWebViewWrapper , value: Boolean) {
+        val view = viewWrapper.webView
         mHasOnOpenWindowEvent = value
         setupWebChromeClient(view)
     }

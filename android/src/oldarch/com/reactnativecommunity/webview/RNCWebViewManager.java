@@ -170,7 +170,7 @@ public class RNCWebViewManager extends ViewGroupManager<RNCWebViewWrapper> {
     }
 
     @ReactProp(name = "hasOnOpenWindowEvent")
-    public void setHasOnOpenWindowEvent(RNCWebView view, boolean hasEvent) {
+    public void setHasOnOpenWindowEvent(RNCWebViewWrapper view, boolean hasEvent) {
         mRNCWebViewManagerImpl.setHasOnOpenWindowEvent(view, hasEvent);
     }
 
